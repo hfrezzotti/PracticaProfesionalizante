@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y ahora que.....?</title>
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <script defer src="../Script/script.js"></script>
+</head>
+<body>
+    <header class="padre-barra">
+        <h1 class="titulo-web">Y ahora que.....?</h1>
+        <nav class="menu-navegacion">
+            <ul class="botonera">
+                <!--Web donde se detallaran las carreras disponibles-->
+                <li class="main-index-carreras-button"><a href="./carreras.html">Carreras</a></li>
+                <!--Web donde se detallaran las instituciones-->
+                <li class="main-index-instituciones-button"><a href="./instituciones.html">Instituciones</a></li>
+                <!--web donde se detallaran los perfiles de profesionales-->
+                <li class="main-index-profesionales-button"><a href="./profesionales.html">Profesionales</a></li>
+                <!--Redireccion al password para ingreso unico-->
+                <li class="main-index-ingresar"><a href="./ingresar.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="mi-presentacion">
+        <h2>Bienvenidos a mi web. Mi nombre es Hernan, soy el creador de "Y ahora que.....? "</h2>
+        <pre>
+            Recuerdo en el 2007 finalizar el secundario y encontrarme con un sin fin de opciones de estudio. Todas parecian
+            majestuosas y prometedoras, sin embargo, condicionaban algo crítico que uno no siempre detecta. Esto es el tiempo.
+            Me hubiera encantado tener recursos centralizados para revisar las opciones disponibles con información en tiempo real,
+            con descripciones de profesionales enfrentando el día a día, así como también de alumnos, dando su devolución sobre las experiencias
+            que se enfrentan al cursar distintos enfoques de organizaciones a la hora de enseñar. Por último y a mi criterio muy importante, el 
+            tiempo que tendrán que invertir para finalizar el estudio. 
+        </pre>
+        <br>
+        <p>Esta web estará en progreso constante, espero pueda ser de utilidad para aquellos que nos costó decidir donde poner nuestro futuro profesional</p>
+    </article>
+</body>
+<footer>
+    <h3>Dejanos tus consultas, ideas y sugerencias</h3>
+    <form action="" method="post"> <!--Definir valor action-->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>;
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="sugerencia">Sugerencia:</label><br>
+        <textarea id="sugerencia" name="sugerencia" rows="4" maxlength="250" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</footer>
+</html>
