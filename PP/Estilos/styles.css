@@ -1,0 +1,357 @@
+/*Estilos mainindex.html*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera */
+.padre-barra {
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-web {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.menu-navegacion {
+    margin-top: 10px;
+}
+
+.menu-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-navegacion a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+}
+
+.menu-navegacion a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Contenido Principal */
+#mi-presentacion {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mi-presentacion h2 {
+    color: #004d99;
+    font-size: 1.8em;
+}
+
+#mi-presentacion pre {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #004d99;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    margin: 0 0 15px;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer textarea {
+    resize: vertical;
+}
+
+footer input[type="submit"] {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-navegacion li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #mi-presentacion {
+        width: 90%;
+    }
+}
+
+/*Estilos carreras.html*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Título principal */
+.titulo-web {
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 4px solid #003366; /* Línea inferior para destacar */
+}
+
+/* Estilos adicionales para una página de listado */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #004d99;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .titulo-web {
+        font-size: 2em;
+        padding: 15px;
+    }
+}
+
+/*Estilos ingresar.html*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Título principal */
+.titulo-web {
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 4px solid #003366; /* Línea inferior para destacar */
+}
+
+/* Estilos del formulario */
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+button {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    .titulo-web {
+        font-size: 2em;
+        padding: 15px;
+    }
+}
+
+/*Estilos Instituciones.html*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Título principal */
+.titulo-web {
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 4px solid #003366; /* Línea inferior para destacar */
+}
+
+/*Estilos nuevoperfil.html*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Título principal */
+.titulo-web {
+    background-color: #004d99; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 4px solid #003366; /* Línea inferior para destacar */
+}
+
+/*Estilos profesionales.html*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Color de fondo suave */
+    text-align: center;
+}
+
+/* Estilos para el título principal */
+.titulo-web {
+    background-color: #007bff; /* Azul brillante */
+    color: #ffffff; /* Texto blanco */
+    padding: 30px; /* Espaciado alrededor del texto */
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    border-bottom: 5px solid #0056b3; /* Línea inferior de color más oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
