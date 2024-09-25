@@ -9,5 +9,65 @@
 </head>
 <body>
     <h1 class="titulo-web">Y ahora que.....?</h1>
+
+    <div class="container mt-5">
+        <h2>Carta de Presentación</h2>
+        <form id="presentationForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="profesion">Profesión:</label>
+                <input type="text" class="form-control" id="profesion" required>
+            </div>
+            <div class="form-group">
+                <label for="lugarTrabajo">Lugar de Trabajo:</label>
+                <input type="text" class="form-control" id="lugarTrabajo" required>
+            </div>
+            <div class="form-group">
+                <label for="aniosExperiencia">Años de Experiencia:</label>
+                <input type="text" class="form-control" id="aniosExperiencia" required>
+            </div>
+            <div class="form-group">
+                <label for="sueldo">Sueldo Aproximado:</label>
+                <input type="text" class="form-control" id="sueldo" required>
+            </div>
+            <div class="form-group">
+                <label for="instagram">Instagram:</label>
+                <input type="url" class="form-control" id="instagram" placeholder="https://instagram.com/tuusuario">
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" class="form-control" id="linkedin" placeholder="https://linkedin.com/in/tuusuario">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="resumen">Resumen:</label>
+                <textarea class="form-control" id="resumen" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="username">Nombre de Usuario (5-10 caracteres):</label>
+                <input type="text" class="form-control" id="username" required minlength="5" maxlength="10">
+                <div class="error" id="usernameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña (mínimo 8 dígitos numéricos):</label>
+                <input type="password" class="form-control" id="password" required pattern="^\d{8,}$">
+                <div class="error" id="passwordError"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+
 </body>
 </html>

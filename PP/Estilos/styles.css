@@ -92,6 +92,7 @@ footer form {
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
+    color: #333;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -166,6 +167,33 @@ body {
 .container {
     width: 80%;
     margin: 20px auto;
+}
+
+.university {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.university h2 {
+    margin-top: 0;
+    color: #004d99;
+}
+
+.university p {
+    margin-bottom: 0;
+}
+
+.profesionales {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card {
