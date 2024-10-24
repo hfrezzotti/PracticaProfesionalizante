@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.zoho.com'; // Servidor SMTP de Zoho
         $mail->SMTPAuth = true;
         $mail->Username = 'pprofesionalhernan@zohomail.com'; // Tu correo de Zoho
-        $mail->Password = 'pprofesionalizantehf'; // Tu contraseña o contraseña de aplicación
+        $mail->Password = '**'; // Tu contraseña o contraseña de aplicación
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // O PHPMailer::ENCRYPTION_SMTPS para SSL
         $mail->Port = 587; // Para TLS; usa 465 para SSL
 
