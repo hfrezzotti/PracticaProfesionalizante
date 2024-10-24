@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Estilos/styles.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        /* Estilo para el modal */
+        #termsModal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+        }
+    </style>
 </head>
 <body>
     <h1 class="titulo-web">Y ahora que.....?</h1>
 
     <div class="container mt-5">
         <h2>Carta de Presentación</h2>
-        <form id="presentationForm" action="/PP/PHP/guardar.php" method="POST">
+        <form id="presentationForm" action="/PP/PHP/guardar.php" method="POST" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -52,18 +75,66 @@
                 <label for="resumen">Resumen:</label>
                 <textarea class="form-control" id="resumen" name="resumen" rows="3" required></textarea>
             </div>
-            <div class="form-group">
-                <label for="username">Nombre de Usuario (5-10 caracteres):</label>
-                <input type="text" class="form-control" id="username" name="username" required minlength="5" maxlength="10">
-                <div class="error" id="usernameError"></div>
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña (mínimo 8 dígitos numéricos):</label>
-                <input type="password" class="form-control" id="password" name="password" required pattern="^\d{8,}$">
-                <div class="error" id="passwordError"></div>
-            </div>
+
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
+
+    <div id="termsModal">
+        <div class="modal-content">
+            <h2>Aviso Importante</h2>
+            <p>Por favor, asegúrate de que solo cargas datos si tienes experiencia profesional real. Estos datos serán analizados y publicados en un máximo de 48 horas en la web.</p>
+            <label>
+                <input type="checkbox" id="acceptTerms"> Acepto que se publique la información brindada.
+            </label>
+            <br><br>
+            <button id="continueBtn">Continuar</button>
+        </div>
+    </div>
+
+    <div class="boton-regreso">
+        <a href="mainindex.html" class="btn">Volver a la Página Principal</a>
+    </div>
+
+    <div class="boton-regreso">
+        <a href="mainindex.html" class="btn">Volver a la Página Principal</a>
+    </div>
+
+    <style>
+        .boton-regreso {
+            margin-top: 20px; /* Espacio entre las carreras y el botón */
+            text-align: center; /* Centra el botón */
+        }
+        .btn {
+            padding: 10px 20px; /* Espaciado interno del botón */
+            background-color: #007BFF; /* Color de fondo */
+            color: white; /* Color del texto */
+            text-decoration: none; /* Sin subrayado */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 16px; /* Tamaño de fuente */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Color de fondo al pasar el ratón */
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('termsModal').style.display = 'block';
+        }
+
+        document.getElementById('continueBtn').onclick = function() {
+            document.getElementById('termsModal').style.display = 'none';
+        }
+
+        function validateForm() {
+            const acceptTerms = document.getElementById('acceptTerms').checked;
+            if (!acceptTerms) {
+                alert("Debes aceptar los términos para continuar.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>

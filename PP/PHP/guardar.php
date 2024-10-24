@@ -45,4 +45,3 @@ if ($result) {
 // Cerrar conexión
 pg_close($conn);
 ?>
-
